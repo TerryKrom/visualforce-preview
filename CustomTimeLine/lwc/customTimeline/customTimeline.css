@@ -1,0 +1,156 @@
+/* 1) Host wrapper: força fundo branco e texto padrão */
+:host {
+  display: block;
+  background-color: #ffffff;
+  color: #16325c;
+}
+
+/* 2) Container da timeline */
+:host .slds-timeline {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Seções (Upcoming & mensal) */
+:host .slds-timeline__section {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* 4) Header de seção */
+:host .slds-timeline__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #f4f6f9;
+  border-bottom: 1px solid #d8dde6;
+  color: #252525;
+}
+
+/* 5) Destaque para Upcoming & Overdue */
+:host .upcoming .slds-timeline__header {
+  background-color: #ffe5e5;
+}
+
+/* 6) Lista de itens */
+:host .slds-timeline__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* 7) Cada item da timeline */
+:host .slds-timeline__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e5ee;
+  background-color: #ffffff;
+}
+
+/* 8) Figura (ícone) */
+:host .slds-media__figure {
+  margin-right: 0.75rem;
+}
+
+/* 9) Ícones do item */
+:host lightning-icon {
+  vertical-align: top;
+}
+
+/* 10) Título e link */
+:host h3 {
+  margin: 0;
+  line-height: 1.25rem;
+}
+
+:host h3 a {
+  color: #0070d2;
+  text-decoration: none;
+}
+
+:host h3 a:hover {
+  text-decoration: underline;
+}
+
+/* 11) Detalhes (tipo, owner, data) */
+:host .slds-timeline__detail {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #54698d;
+  line-height: 1rem;
+}
+
+/* 12) Rótulo de due/overdue na seção Upcoming */
+:host .dueLabel {
+  font-weight: 600;
+}
+
+/* 13) Espaçamento entre seções */
+:host .slds-timeline__section+.slds-timeline__section {
+  margin-top: 1rem;
+}
+
+.left-label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailbody {
+  padding-left: 25px;
+  margin-left: -25px !important;
+  border-left: 2px solid #939393;
+}
+
+.grey-container{
+  background-color: #f4f6f9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+.display-email{
+  margin: 10px;
+}
+
+.display-email, .display-body{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.edit{
+  position: absolute;
+  right: 20px;
+  background-color: #fff;
+  color: #606060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.email-preview-label {
+  font-weight: 600;
+  color: #3e3e3c;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.email-frame {
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

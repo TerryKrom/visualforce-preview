@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>63.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightning__RecordPage</target>
+    <target>lightning__RecordAction</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__RecordPage">
+      <objects>
+        <!-- Aqui você pode listar vários objetos -->
+        <object>Opportunity</object>
+        <object>Account</object>
+        <object>Case</object>
+        <object>Contact</object>
+      </objects>
+      <property name="objectType" type="String" label="Object Type" description="Tipo de objeto para timeline"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
